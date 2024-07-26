@@ -4,6 +4,22 @@
 */
 
 function isPalindrome(str) {
+
+  if(str.length == 1)
+    return true;
+  
+  let i = 0, j = str.length;
+
+  for(; i < str.length/2; i++, j--) {
+
+    if(str[i] == " " || str[i] == "," || str[i] == "!" || str[i] == "?")
+      i++;
+    if(str[j] == " " || str[j] == "," || str[j] == "!" || str[j] == "?")
+      j++;
+
+    if(str[i] != str[j])
+      return false;
+  }
   return true;
 }
 

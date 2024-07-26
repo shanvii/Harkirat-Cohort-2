@@ -4,9 +4,21 @@
 
   Once you've implemented the logic, test your code by running
 */
+//done
 
 function countVowels(str) {
     // Your code here
+    str = str.toLowerCase();
+    let arr = str.split('');
+
+    let count = 0;
+
+    for(let i = 0; i < arr.length; i++) {
+      if(arr[i] == 'a' || arr[i] == 'e' || arr[i] == 'i' || arr[i] == 'o' || arr[i] == 'u')
+        count++;
+    }
+
+    return count;
 }
 
 module.exports = countVowels;
