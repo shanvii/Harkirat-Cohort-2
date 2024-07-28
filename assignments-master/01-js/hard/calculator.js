@@ -17,7 +17,33 @@
 */
 
 class Calculator {
-  
+  constructor() {
+    this.result = 0;
+  }
+
+  add(a) {
+    this.result += a;
+  }
+
+  subtract(a) {
+    this.result -= a;
+  }
+
+  multiply(a) {
+    this.result *= a;
+  }
+
+  divide(a) {
+    this.result /= a;
+  }
+
+  clear(a) {
+    this.result = 0;
+  }
+
+  getResult() {
+    return this.result;
+  }
 }
 
 module.exports = Calculator;
